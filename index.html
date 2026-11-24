@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Sharma - UI/UX Designer</title>
+    <!-- Подключаем шрифты Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Иконки (используем FontAwesome для простоты, можно заменить на SVG) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <span class="logo-icon">FA</span>
+                    <div class="logo-text">
+                        <span class="name">Филиппов Александр</span>
+                        <span class="role">Веб разработчик</span>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <a href="#" class="btn btn-primary">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
+            </nav>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="greeting">ПРИВЕТ, Я</span>
+                    <h1>Филиппов Александр</h1>
+                    <h2 class="subtitle">Веб разработчик</h2>
+                    <p class="description">Делаю сайты, которые помогают людям комфортно работать</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-video"><i class="fa-regular fa-circle-play"></i> Watch Introduction</a>
+                    </div>
+
+                    <div class="hero-footer">
+                        <span class="availability">AVAILABLE FOR FREELANCE</span>
+                        <div class="socials">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                            <a href="#"><i class="fa-brands fa-vk"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Rohan Sharma">
+                    <div class="experience-badge">
+                        <i class="fa-regular fa-star"></i>
+                        <span class="number">5+ Years</span>
+                        <span class="text">Experience<br>Designing Digital Products</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <div class="container about-grid">
+            <div class="about-image-wrapper">
+                <div class="dots-pattern"></div>
+                <img src="https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Working">
+                <div class="about-badge">
+                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                    <p>Passionate about solving problems through design and creating meaningful connections.</p>
+                </div>
+            </div>
+            <div class="about-text">
+                <span class="section-tag">Обо мне</span>
+                <h2 class="section-title">Designing with Empathy,<br>Building with Purpose.</h2>
+                <p>I'm a UI/UX Designer with 5+ years of experience crafting digital products that are intuitive, accessible and impactful. I believe in understanding user needs and turning ideas into seamless experiences.</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-number">70+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fa-regular fa-face-smile"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-number">45+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years of Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="signature">Rohan Sharma</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services">
+        <div class="container">
+            <span class="section-tag">УСЛУГИ</span>
+            <h2 class="section-title">Что я могу предложить</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3>Разработка сайта</h3>
+                    <p>Сделаю сайт по вашему макету или подберем из готовых</p>
+                    <p>3000 - 5000 руб</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3>Размещение в интеренете</h3>
+                    <p>Размещение сайта на бесплатных платформах или создание своего иникального имени</p>
+                    <p>1000 - 2000 руб</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-desktop"></i></div>
+                    <h3>Сопровождение сайта</h3>
+                    <p>После размещения, внесения изменений: поменять цены, добавить новый блок</p>
+                    <p>500 руб/час</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3>Design Systems</h3>
+                    <p>Creating reusable components and systems for scalable digital products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills">
+        <div class="container skills-grid">
+            <div class="skills-text">
+                <span class="section-tag">SKILLS & EXPERIENCE</span>
+                <h2 class="section-title">Tools I Use &<br>My Expertise</h2>
+                <p>I combine creativity with the right tools to deliver exceptional digital experiences.</p>
+                <a href="#" class="btn btn-outline">Download Resume <i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="skills-bars">
+                <div class="skill-column">
+                    <h4>Design Tools</h4>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Figma</span><span>90%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Adobe XD</span><span>85%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Sketch</span><span>75%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Photoshop</span><span>80%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Illustrator</span><span>70%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+                    </div>
+                </div>
+                <div class="skill-column">
+                    <h4>Expertise</h4>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>User Research</span><span>90%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Wireframing</span><span>85%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Prototyping</span><span>90%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Usability Testing</span><span>80%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Interaction Design</span><span>85%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="section-tag">FEATURED PROJECTS</span>
+                    <h2 class="section-title">Some Things I've Built</h2>
+                </div>
+                <a href="#" class="btn btn-outline">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Finova">
+                    </div>
+                    <div class="project-info">
+                        <h3>Finova - Banking App</h3>
+                        <span>Mobile App Design</span>
+                        <a href="#" class="arrow-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Wanderly">
+                    </div>
+                    <div class="project-info">
+                        <h3>Wanderly - Travel Website</h3>
+                        <span>Web Design</span>
+                        <a href="#" class="arrow-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dashkit">
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashkit - Analytics Dashboard</h3>
+                        <span>Web Application</span>
+                        <a href="#" class="arrow-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="section-tag">TESTIMONIALS</span>
+                    <h2 class="section-title">What Clients Say</h2>
+                </div>
+                <div class="nav-arrows">
+                    <button><i class="fa-solid fa-arrow-left"></i></button>
+                    <button><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"Rohan is an exceptional designer. He understood our needs perfectly and delivered beyond expectations."</p>
+                    <div class="client">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Arjun Mehta">
+                        <div>
+                            <h4>Arjun Mehta</h4>
+                            <span>CEO, Finova</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"Professional, creative and reliable. Working with Rohan was a fantastic experience from start to finish."</p>
+                    <div class="client">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Neha Verma">
+                        <div>
+                            <h4>Neha Verma</h4>
+                            <span>Product Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"He has a great eye for detail and creates designs that users love. Highly recommended!"</p>
+                    <div class="client">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Karan Singh">
+                        <div>
+                            <h4>Karan Singh</h4>
+                            <span>Founder, Wanderly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta">
+        <div class="container cta-content">
+            <div class="cta-text">
+                <div class="cta-icon"><i class="fa-regular fa-paper-plane"></i></div>
+                <div>
+                    <h2>Let's Create Something<br>Amazing Together</h2>
+                    <p>Have a project in mind? I'd love to hear about it.</p>
+                </div>
+            </div>
+            <a href="#" class="btn btn-primary">Get In Touch <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">RS</span>
+                    <div class="logo-text">
+                        <span class="name">Rohan Sharma</span>
+                        <span class="role">UI/UX DESIGNER</span>
+                    </div>
+                </div>
+                <p>Designing meaningful digital experiences that inspire and engage users.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fa-regular fa-envelope"></i>as.filippov.web@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Mumbai, India</li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <h4>Let's Connect</h4>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-behance"></i></a>
+                    <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rohan Sharma. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -15,24 +15,21 @@
 <body>
 
     <!-- HERO SECTION -->
-    <header class="hero">
+    <header class="hero" id="home">
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <span class="logo-icon">FA</span>
+                    <span class="logo-icon">ФА</span>
                     <div class="logo-text">
                         <span class="name">Филиппов Александр</span>
                         <span class="role">Веб разработчик</span>
                     </div>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#sevices">Услуги</a></li>
+                    <li><a href="#skills">Навыки и опыт</a></li>
                 </ul>
                 <a href="#" class="btn btn-primary">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
             </nav>
@@ -42,7 +39,7 @@
                     <span class="greeting">ПРИВЕТ, Я</span>
                     <h1>Филиппов Александр</h1>
                     <h2 class="subtitle">Веб разработчик</h2>
-                    <p class="description">Делаю сайты, которые помогают людям комфортно работать</p>
+                    <p class="description">Делаю сайты, которые помогают людям комфортно работать и развиваться</p>
                     
                     <div class="hero-buttons">
                         <a href="#" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
@@ -61,7 +58,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Rohan Sharma">
+                    <!-- <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Rohan Sharma"> -->
                     <div class="experience-badge">
                         <i class="fa-regular fa-star"></i>
                         <span class="number">5+ Years</span>
@@ -73,22 +70,23 @@
     </header>
 
     <!-- ABOUT SECTION -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container about-grid">
             <div class="about-image-wrapper">
                 <div class="dots-pattern"></div>
-                <img src="https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Working">
+                <!-- <img src="https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Working"> -->
                 <div class="about-badge">
                     <div class="icon"><i class="fa-solid fa-user"></i></div>
-                    <p>Passionate about solving problems through design and creating meaningful connections.</p>
+                    <p>Индивидуальный подход с положительными эмоциями</p>
                 </div>
             </div>
             <div class="about-text">
                 <span class="section-tag">Обо мне</span>
-                <h2 class="section-title">Designing with Empathy,<br>Building with Purpose.</h2>
-                <p>I'm a UI/UX Designer with 5+ years of experience crafting digital products that are intuitive, accessible and impactful. I believe in understanding user needs and turning ideas into seamless experiences.</p>
+                <h2 class="section-title">Работа, которая,<br>приносит удовольствие</h2>
+                <p class="section-text">Разработка сайтов — моё увлечение. Видеть, как из символов складывается сайт, — всё равно что наблюдать рождение чего‑то нового. Но по‑настоящему магия ощущается, когда сайт выходит в публичное пространство и его начинают видеть другие. Для клиента это часто маленький праздник: вот ссылка, вот его проект в интернете, вот люди, которые его находят.  
+                </p>
                 
-                <div class="stats">
+                <!-- <div class="stats">
                     <div class="stat-item">
                         <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
                         <div class="stat-info">
@@ -110,14 +108,14 @@
                             <span class="stat-label">Years of Experience</span>
                         </div>
                     </div>
-                </div>
-                <div class="signature">Rohan Sharma</div>
+                </div> -->
+                <div class="signature">Филиппов Александр</div>
             </div>
         </div>
     </section>
 
     <!-- SERVICES SECTION -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <span class="section-tag">УСЛУГИ</span>
             <h2 class="section-title">Что я могу предложить</h2>
@@ -143,67 +141,51 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
-                    <h3>Design Systems</h3>
-                    <p>Creating reusable components and systems for scalable digital products.</p>
+                    <h3>Консультация и советы</h3>
+                    <p>Консульация и советы от меня бесценны поэтому 500000руб</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SKILLS SECTION -->
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container skills-grid">
             <div class="skills-text">
-                <span class="section-tag">SKILLS & EXPERIENCE</span>
-                <h2 class="section-title">Tools I Use &<br>My Expertise</h2>
-                <p>I combine creativity with the right tools to deliver exceptional digital experiences.</p>
+                <span class="section-tag">НАВЫКИ & ОПЫТ</span>
+                <h2 class="section-title">Интсрументы &<br>Навыки</h2>
+                <p class="section-text">Обладаювсеми необходимыми навыками для создания полноценного рабочего сайта.</p>
                 <a href="#" class="btn btn-outline">Download Resume <i class="fa-solid fa-download"></i></a>
             </div>
-            <div class="skills-bars">
-                <div class="skill-column">
-                    <h4>Design Tools</h4>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Figma</span><span>90%</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Adobe XD</span><span>85%</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Sketch</span><span>75%</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Photoshop</span><span>80%</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Illustrator</span><span>70%</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+            <div class="skills-cards">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-html5"></i>
                     </div>
                 </div>
-                <div class="skill-column">
-                    <h4>Expertise</h4>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>User Research</span><span>90%</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                    <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-css3-alt"></i>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Wireframing</span><span>85%</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-square-js"></i>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Prototyping</span><span>90%</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-php"></i>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Usability Testing</span><span>80%</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-laravel"></i>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Interaction Design</span><span>85%</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-database"></i>
                     </div>
                 </div>
             </div>
@@ -211,7 +193,7 @@
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="projects">
+    <!-- <section class="projects">
         <div class="container">
             <div class="section-header">
                 <div>
@@ -254,10 +236,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- TESTIMONIALS SECTION -->
-    <section class="testimonials">
+    <!-- <section class="testimonials">
         <div class="container">
             <div class="section-header">
                 <div>
@@ -306,7 +288,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- CTA SECTION -->
     <section class="cta">
@@ -314,11 +296,11 @@
             <div class="cta-text">
                 <div class="cta-icon"><i class="fa-regular fa-paper-plane"></i></div>
                 <div>
-                    <h2>Let's Create Something<br>Amazing Together</h2>
-                    <p>Have a project in mind? I'd love to hear about it.</p>
+                    <h2>Создать что-нибудь <br>удивительное вместе</h2>
+                    <p>Есть готовый проект? Или только идея?</p>
                 </div>
             </div>
-            <a href="#" class="btn btn-primary">Get In Touch <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="btn btn-primary">Превратить ее в жинзь<i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </section>
 
@@ -327,35 +309,33 @@
         <div class="container footer-grid">
             <div class="footer-brand">
                 <div class="logo">
-                    <span class="logo-icon">RS</span>
+                    <span class="logo-icon">ФА</span>
                     <div class="logo-text">
-                        <span class="name">Rohan Sharma</span>
-                        <span class="role">UI/UX DESIGNER</span>
+                        <span class="name">Филиппов Александр</span>
+                        <span class="role">Веб разработчик</span>
                     </div>
                 </div>
-                <p>Designing meaningful digital experiences that inspire and engage users.</p>
+                <p>Делаю сайты, которые помогают людям комфортно работать и развиваться.</p>
             </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
+            <div class="footer-nav">
+                <h4 class="footer-nav-title">Навигация</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#sevices">Услуги</a></li>
+                    <li><a href="#skills">Навыки и опыт</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
-                <h4>Contact Info</h4>
+                <h4 class="footer-nav-title">Контактная информация</h4>
                 <ul>
-                    <li><i class="fa-regular fa-envelope"></i>as.filippov.web@gmail.com</li>
-                    <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
-                    <li><i class="fa-solid fa-location-dot"></i> Mumbai, India</li>
+                    <li><i class="fa-regular fa-envelope"></i><span class="footer-contact-text">as.filippov.web@gmail.com</span></li>
+                    <li><i class="fa-solid fa-phone"></i><span class="footer-contact-text">+91 98765 43210</span></li>
+                    <li><i class="fa-solid fa-location-dot"></i><span class="footer-contact-text">Mumbai, India</span></li>
                 </ul>
             </div>
             <div class="footer-socials">
-                <h4>Let's Connect</h4>
+                <h4 class="footer-nav-title">Контакты</h4>
                 <div class="socials">
                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="#"><i class="fa-brands fa-behance"></i></a>

@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    font-size: 1.6rem; /* 16px */
+    font-size: 10px; /* 16px */
     line-height: 1.5;
     background-color: #F9F6F0; /* Общий фон */
     color: #2D1E17;
@@ -56,7 +56,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .section-tag {
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     color: var(--color-primary);
@@ -66,11 +66,18 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .section-title {
     font-family: var(--font-heading);
-    font-size: 3.6rem;
+    font-size: 3.8rem;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 2rem;
     color: var(--color-dark);
+}
+
+.section-text {
+    font-size: 1.9rem;
+    color: var(--color-text-light); 
+    margin-bottom: 3.3em; 
+    line-height: 1.4; 
 }
 
 .btn {
@@ -143,7 +150,7 @@ HERO SECTION
     right: -10%;
     width: 60%;
     height: 120%;
-    background: radial-gradient(circle, rgba(217,107,67,0.2) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(217,107,67,0.5) 0%, transparent 70%);
     z-index: 0;
 }
 
@@ -169,13 +176,36 @@ HERO SECTION
     font-weight: 700;
     font-size: 1.6rem;
 }
-.logo-text { display: flex; flex-direction: column; }
-.logo-text .name { font-weight: 600; font-size: 1.6rem; }
-.logo-text .role { font-size: 1rem; color: rgba(255,255,255,0.6); letter-spacing: 0.1em; }
+.logo-text { 
+    display: flex; 
+    flex-direction: column; 
+}
 
-.nav-links { display: flex; gap: 3rem; }
-.nav-links a { font-size: 1.4rem; color: rgba(255,255,255,0.8); transition: color 0.3s; }
-.nav-links a:hover { color: var(--color-primary); }
+.logo-text .name { 
+    font-weight: 600; 
+    font-size: 1.6rem; 
+}
+
+.logo-text .role { 
+    font-size: 1.3rem; 
+    color: rgba(255,255,255,0.6); 
+    letter-spacing: 0.1em; 
+}
+
+.nav-links { 
+    display: flex; 
+    gap: 3rem; 
+}
+
+.nav-links a { 
+    font-size: 1.8rem; 
+    color: rgba(255,255,255,0.8); 
+    transition: color 0.3s; 
+}
+
+.nav-links a:hover { 
+    color: var(--color-primary); 
+}
 
 .hero-content {
     display: grid;
@@ -211,7 +241,7 @@ HERO SECTION
 }
 
 .hero-text .description {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: rgba(255,255,255,0.7);
     max-width: 40rem;
     margin-bottom: 3rem;
@@ -221,10 +251,14 @@ HERO SECTION
 
 .hero-footer { display: flex; flex-direction: column; gap: 1.5rem; }
 .availability { font-size: 1.2rem; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
-.socials { display: flex; gap: 1.5rem; }
+.socials { 
+    display: flex; 
+    gap: 1.5rem; 
+}
+
 .socials a {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.8rem;
+    height: 3.8rem;
     border-radius: 50%;
     border: 1px solid rgba(255,255,255,0.2);
     display: flex;
@@ -233,6 +267,11 @@ HERO SECTION
     color: var(--color-white);
     transition: all 0.3s;
 }
+
+.socials a i {
+    font-size: 1.8rem;
+}
+
 .socials a:hover {
     background-color: var(--color-primary);
     border-color: var(--color-primary);
@@ -307,7 +346,7 @@ ABOUT SECTION
     color: var(--color-white);
     padding: 2rem;
     border-radius: 1rem;
-    max-width: 25rem;
+    max-width: 30rem;
     display: flex;
     gap: 1.5rem;
     align-items: flex-start;
@@ -321,9 +360,16 @@ ABOUT SECTION
     align-items: center;
     justify-content: center;
 }
-.about-badge p { font-size: 1.2rem; line-height: 1.4; color: rgba(255,255,255,0.8); }
 
-.about-text p { font-size: 1.6rem; color: var(--color-text-light); margin-bottom: 4rem; line-height: 1.7; }
+.about-badge .icon i {
+    font-size: 1.8rem;
+}
+
+.about-badge p { 
+    font-size: 1.4em; 
+    line-height: 1.4; 
+    color: rgba(255,255,255,0.8); 
+}
 
 .stats { display: flex; gap: 4rem; margin-bottom: 4rem; }
 .stat-item { display: flex; align-items: center; gap: 1.5rem; }
@@ -377,10 +423,10 @@ SERVICES SECTION
     border-radius: 1.5rem;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-.service-card:hover {
+/* .service-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.05);
-}
+} */
 .service-icon {
     width: 6rem;
     height: 6rem;
@@ -393,8 +439,16 @@ SERVICES SECTION
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
-.service-card h3 { font-size: 2rem; margin-bottom: 1rem; color: var(--color-dark); }
-.service-card p { font-size: 1.4rem; color: var(--color-text-light); line-height: 1.6; }
+.service-card h3 { 
+    font-size: 1.8rem; 
+    margin-bottom: 1rem; 
+    color: var(--color-dark); 
+}
+.service-card p { 
+    font-size: 1.5rem; 
+    color: var(--color-text-light); 
+    line-height: 1.6; 
+}
 
 
 /* 
@@ -411,43 +465,37 @@ SKILLS SECTION
 
 .skills-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     gap: 8rem;
 }
 
+.skills-text {
+    /* max-width: 50%; */
+}
+
 .skills-text .section-title { color: var(--color-white); }
-.skills-text p { color: rgba(255,255,255,0.6); margin-bottom: 3rem; font-size: 1.6rem; }
 
-.skills-bars {
+.skills-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    /* grid: repeat(3, 50px) / repeat(3, 50px); */
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: end;
+    justify-items: center;
+    gap: 60px 30px;
 }
 
-.skill-column h4 {
-    font-size: 1.8rem;
-    margin-bottom: 3rem;
-    color: var(--color-primary);
-    font-weight: 500;
+.skill-card {
+    /* width: 70px; */
 }
 
-.skill-item { margin-bottom: 2.5rem; }
-.skill-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
+.skill-icon {
+ 
 }
-.progress-bar {
-    height: 0.6rem;
-    background: rgba(255,255,255,0.1);
-    border-radius: 1rem;
-    overflow: hidden;
-}
-.progress {
-    height: 100%;
-    background: var(--color-primary);
-    border-radius: 1rem;
+
+.skill-icon i {
+    font-size: 5.5rem;
+    /* color: var(--color-primary); */
 }
 
 
@@ -613,12 +661,12 @@ CTA SECTION
 .cta-icon {
     width: 6rem;
     height: 6rem;
-    border: 1px solid rgba(255,255,255,0.3);
+    /* border: 1px solid rgba(255,255,255,0.3); */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 3em;
 }
 .cta-text h2 { font-family: var(--font-heading); font-size: 3.2rem; line-height: 1.2; margin-bottom: 1rem; }
 .cta-text p { font-size: 1.4rem; color: rgba(255,255,255,0.8); }
@@ -653,25 +701,65 @@ FOOTER
     padding-bottom: 6rem;
 }
 
-.footer-brand .logo { margin-bottom: 2rem; }
-.footer-brand p { font-size: 1.4rem; color: rgba(255,255,255,0.6); max-width: 25rem; }
+.footer-brand .logo { 
+    margin-bottom: 2rem; 
+}
 
-.footer h4 { font-size: 1.6rem; margin-bottom: 2rem; color: var(--color-white); }
-.footer ul { display: flex; flex-direction: column; gap: 1.2rem; }
-.footer ul li a { font-size: 1.4rem; color: rgba(255,255,255,0.6); transition: color 0.3s; }
-.footer ul li a:hover { color: var(--color-primary); }
+.footer-brand p { 
+    font-size: 1.4rem; 
+    color: rgba(255,255,255,0.6); 
+    max-width: 25rem; 
+}
+
+.footer-nav-title { 
+    font-size: 1.6em; 
+    margin-bottom: 2rem; 
+    color: var(--color-white); 
+}
+
+.footer-nav ul { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.2rem; 
+}
+
+.footer-nav ul li a { 
+    font-size: 1.4em; 
+    color: rgba(255,255,255,0.6); 
+    transition: color 0.3s; 
+}
+.footer-nav ul li a:hover { 
+    color: var(--color-primary); 
+}
+
+.footer-contact ul {
+    display: flex;
+    flex-direction: column; 
+    gap: 1.2rem; 
+}
 
 .footer-contact ul li {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    font-size: 1.4rem;
+    gap: 1.2rem;
     color: rgba(255,255,255,0.6);
 }
-.footer-contact ul li i { color: var(--color-primary); }
+.footer-contact ul li i { 
+    color: var(--color-primary);
+    font-size: 1.4rem;
+}
 
-.footer-socials .socials a { border-color: rgba(255,255,255,0.1); }
-.footer-socials .socials a:hover { border-color: var(--color-primary); }
+.footer-contact-text {
+    font-size: 1.4rem;
+}
+
+.footer-socials .socials a { 
+    border-color: rgba(255,255,255,0.1); 
+}
+
+.footer-socials .socials a:hover { 
+    border-color: var(--color-primary); 
+}
 
 .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.1);

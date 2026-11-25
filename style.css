@@ -66,7 +66,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .section-title {
     font-family: var(--font-heading);
-    font-size: 3.8rem;
+    font-size: 5rem;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 2rem;
@@ -74,7 +74,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .section-text {
-    font-size: 1.9rem;
+    font-size: 2rem;
     color: var(--color-text-light); 
     margin-bottom: 3.3em; 
     line-height: 1.4; 
@@ -183,7 +183,7 @@ HERO SECTION
 
 .logo-text .name { 
     font-weight: 600; 
-    font-size: 1.6rem; 
+    font-size: 1.8rem; 
 }
 
 .logo-text .role { 
@@ -198,7 +198,7 @@ HERO SECTION
 }
 
 .nav-links a { 
-    font-size: 1.8rem; 
+    font-size: 2rem; 
     color: rgba(255,255,255,0.8); 
     transition: color 0.3s; 
 }
@@ -257,8 +257,8 @@ HERO SECTION
 }
 
 .socials a {
-    width: 3.8rem;
-    height: 3.8rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     border: 1px solid rgba(255,255,255,0.2);
     display: flex;
@@ -269,7 +269,7 @@ HERO SECTION
 }
 
 .socials a i {
-    font-size: 1.8rem;
+    font-size: 3rem;
 }
 
 .socials a:hover {
@@ -316,7 +316,7 @@ ABOUT SECTION
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.25fr;
     gap: 8rem;
     align-items: center;
 }
@@ -440,12 +440,12 @@ SERVICES SECTION
     margin-bottom: 2rem;
 }
 .service-card h3 { 
-    font-size: 1.8rem; 
+    font-size: 2rem; 
     margin-bottom: 1rem; 
     color: var(--color-dark); 
 }
 .service-card p { 
-    font-size: 1.5rem; 
+    font-size: 1.7rem; 
     color: var(--color-text-light); 
     line-height: 1.6; 
 }
@@ -706,13 +706,13 @@ FOOTER
 }
 
 .footer-brand p { 
-    font-size: 1.4rem; 
+    font-size: 1.6rem; 
     color: rgba(255,255,255,0.6); 
     max-width: 25rem; 
 }
 
 .footer-nav-title { 
-    font-size: 1.6em; 
+    font-size: 2rem; 
     margin-bottom: 2rem; 
     color: var(--color-white); 
 }
@@ -724,7 +724,7 @@ FOOTER
 }
 
 .footer-nav ul li a { 
-    font-size: 1.4em; 
+    font-size: 1.8em; 
     color: rgba(255,255,255,0.6); 
     transition: color 0.3s; 
 }
@@ -746,11 +746,11 @@ FOOTER
 }
 .footer-contact ul li i { 
     color: var(--color-primary);
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 .footer-contact-text {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 .footer-socials .socials a { 
@@ -784,6 +784,8 @@ FOOTER
     .hero-buttons { justify-content: center; }
     .hero-footer { align-items: center; }
     .hero-image img { margin: 0 auto; mask-image: none; -webkit-mask-image: none; border-radius: 2rem;}
+    .description {max-width: 100%; padding: 0px 50px;}
+
     .experience-badge { right: 10%; bottom: 5%; }
     
     .about-grid { grid-template-columns: 1fr 1fr; }
@@ -798,8 +800,9 @@ FOOTER
     
     .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
     .testimonials-grid > *:last-child { grid-column: span 2; max-width: 50%; margin: 0 auto; }
-    
-    .footer-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .footer {padding: 8rem;}
+    .footer-grid { grid-template-columns: repeat(2, 1fr);  gap: 4rem 25rem;}
 }
 
 /* Телефоны (до 768px) */

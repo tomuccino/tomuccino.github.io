@@ -330,7 +330,7 @@
                 <h4 class="footer-nav-title">Контактная информация</h4>
                 <ul>
                     <li><i class="fa-regular fa-envelope"></i><span class="footer-contact-text">as.filippov.web@gmail.com</span></li>
-                    <li><i class="fa-solid fa-phone"></i><span class="footer-contact-text">+91 98765 43210</span></li>
+                    <li><i class="fa-solid fa-phone"></i><a class="footer-contact-text" id="phone-link" href="tel:+70000000000">+7 (000) 000-00-00</a></li>
                     <li><i class="fa-solid fa-location-dot"></i><span class="footer-contact-text">Mumbai, India</span></li>
                 </ul>
             </div>
@@ -350,4 +350,17 @@
     </footer>
 
 </body>
+
+<script>
+    const phoneParts = ['+7', '999', '123', '45', '67'];
+    const fullPhone = phoneParts.join(''); 
+    const link = document.getElementById('phone-link');
+    link.href = 'tel:' + fullPhone;
+    link.textContent = formatPhone(fullPhone);
+
+    function formatPhone(num) {
+    return num.replace(/^(\+?\d)(\d{3})(\d{3})(\d{2})(\d{2})$/, '$1 ($2) $3-$4-$5');
+    }
+</script>
+
 </html>

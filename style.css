@@ -232,7 +232,7 @@ HERO SECTION
     margin-bottom: 0.5rem;
 }
 
-.hero-text .subtitle {
+.subtitle {
     font-size: 4rem;
     color: var(--color-primary);
     font-family: var(--font-heading);
@@ -240,7 +240,7 @@ HERO SECTION
     margin-bottom: 2rem;
 }
 
-.hero-text .description {
+.description {
     font-size: 1.8rem;
     color: rgba(255,255,255,0.7);
     max-width: 40rem;
@@ -775,14 +775,18 @@ FOOTER
 @media (max-width: 1024px) {
     html { font-size: 9px; } /* Уменьшаем базовый размер */
     
-    .hero-content { grid-template-columns: 1fr; text-align: center; gap: 6rem; }
+    .hero-content { 
+        grid-template-columns: 1fr 1fr; 
+        text-align: center; 
+        gap: 6rem; 
+    }
     .hero-text { margin: 0 auto; max-width: 60rem; }
     .hero-buttons { justify-content: center; }
     .hero-footer { align-items: center; }
     .hero-image img { margin: 0 auto; mask-image: none; -webkit-mask-image: none; border-radius: 2rem;}
     .experience-badge { right: 10%; bottom: 5%; }
     
-    .about-grid { grid-template-columns: 1fr; }
+    .about-grid { grid-template-columns: 1fr 1fr; }
     .about-image-wrapper { max-width: 50rem; margin: 0 auto; }
     
     .services-grid { grid-template-columns: repeat(2, 1fr); }
@@ -800,14 +804,27 @@ FOOTER
 
 /* Телефоны (до 768px) */
 @media (max-width: 768px) {
+    .hero::before {
+        width: 0px;
+        height: 0px;
+    }
+    .hero-content { 
+        grid-template-columns: 1fr; 
+        text-align: center; 
+        gap: 6rem; 
+    }
+
     .nav-links { display: none; } /* В реальном проекте здесь бургер-меню */
     .navbar { justify-content: space-between; }
     
     .hero { border-radius: 0 0 20px 20px; padding-bottom: 5rem; }
     .hero-text h1 { font-size: 5rem; }
-    .hero-text .subtitle { font-size: 3rem; }
+    .subtitle { font-size: 3rem; }
+    .description {max-width: 100%; padding: 0px 50px;}
     .hero-buttons { flex-direction: column; width: 100%; max-width: 30rem; margin: 0 auto 4rem; }
     .btn { justify-content: center; }
+
+    .about-grid { grid-template-columns: 1fr; }
     
     .experience-badge { right: 50%; transform: translateX(50%); bottom: -2rem; width: 80%; text-align: center; }
     
